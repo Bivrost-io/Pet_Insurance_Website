@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Livvic", serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background: url('happy_animal_cover.jpg')
+      no-repeat center center/cover;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+  }
+  
+  header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  header h1 {
+    position: relative;
+    font-size: 3rem;
+    z-index: 1;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+  }
+  
+  section {
+    padding: 2rem 0;
+  }
+  
+  section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #007BFF;
+  }
+  
+  section p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .features,
+  .plans,
+  .testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .feature,
+  .plan,
+  .testimonial {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    text-align: center;
+  }
+  
+  .titles {
+    color: #ff5e00;
+    text-align: center;
+    border: 5px solid #000000;
+    padding: 15px 30px;
+    border-radius: 30px;
+  }
+
+  .feature img,
+  .plan img,
+  .testimonial img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .feature h3,
+  .plan h3 {
+    margin: 1rem 0;
+    color: #007BFF;
+  }
+  
+  .feature p,
+  .plan p,
+  .testimonial p {
+    padding: 0 1rem 1rem;
+  }
+  
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+      padding: 0 1rem;
+    }
+    .features,
+    .plans,
+    .testimonials {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
