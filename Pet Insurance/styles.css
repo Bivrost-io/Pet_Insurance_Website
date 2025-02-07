@@ -10,6 +10,26 @@
     background: #f4f4f4;
     color: #333;
   }
+
+nav {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #007BFF;
+}
   
   header {
     background: url('happy_animal_cover.jpg')
