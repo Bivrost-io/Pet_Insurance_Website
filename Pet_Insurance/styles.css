@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Livvic", serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+  }
+
+nav {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background: #ddd; 
+}
+
+nav a.active {
+  background: #ff5e00; 
+  color: white;
+  font-weight: bold;
+  border: 2px solid #000000;
+}
+
+  
+  header {
+    background: url('Photos/happy_animal_cover.jpg')
+      no-repeat center center/cover;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+  }
+  
+  header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  header h1 {
+    position: relative;
+    font-size: 3rem;
+    z-index: 1;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+  }
+  
+  section {
+    padding: 2rem 0;
+  }
+  
+  section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #007BFF;
+  }
+  
+  section p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .features,
+  .plans,
+  .testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .feature,
+  .plan,
+  .testimonial {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    text-align: center;
+  }
+  
+  .titles {
+    color: #ff5e00;
+    text-align: center;
+    border: 5px solid #000000;
+    padding: 15px 30px;
+    border-radius: 30px;
+    width: fit-content;
+    margin: 20px auto; 
+    display: block; 
+}
+
+
+  .feature img,
+  .plan img,
+  .testimonial img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .feature h3,
+  .plan h3 {
+    margin: 1rem 0;
+    color: #007BFF;
+  }
+  
+  .feature p,
+  .plan p,
+  .testimonial p {
+    padding: 0 1rem 1rem;
+  }
+
+  .contact form {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 15px; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.contact form label {
+    display: block;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.contact form input,
+.contact form textarea {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact form input {
+    width: 200px; 
+}
+
+.contact form textarea {
+    width: 300px; 
+}
+
+.contact form button {
+    background-color: #ff5e00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact form button:hover {
+    background-color: #cc4b00;
+}
+
+  
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+      padding: 0 1rem;
+    }
+    .features,
+    .plans,
+    .testimonials {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
